@@ -1,0 +1,35 @@
+.card-cripto-container{
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    background: #50596d;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #eeeeee;
+}
+.card-img{
+    width: 20%;
+    border-radius: 50%;
+}
+.card-img img{
+    width: 55px;
+    height: 55px;
+}
+.card-description{
+    width: 80%;
+    padding: 0 5px;
+}
+.description-1,.description-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.description-1{
+    font-size: 17px;
+}
+.description-2{
+    font-size: 14px;
+}

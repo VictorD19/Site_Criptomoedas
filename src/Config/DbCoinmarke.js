@@ -1,24 +1,24 @@
-const myInit = { method: 'GET',
-               headers:{"X-CMC_PRO_API_KEY":'b62ae2b5-fca1-459f-a08c-1656a67fdc4b',
-               mode: 'cors',}};
-const BASE_URL = 'https://pro-api.coinmarketcap.com/'
+const Base_Url ='http://localhost:8081/'
 
-const getCurrency = async(endpoint)=>{
-    const req = await fetch(`${BASE_URL}${endpoint}`,myInit)
-    const json = await req.json()
-    return json
+const getCurrency= async (endpoint) =>{
+    const req = await fetch(`${Base_Url}${endpoint}`)
+    const reqJson = await req.json()
+    return reqJson
 }
 
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+export default  {
     getAllCurrency: async()=>{
         return [
             {
-                slug:'All',
-                items: await getCurrency('v1/cryptocurrency/map')
+                slug:'latest',
+                items: await getCurrency('latest')
+            },
+            {
+                slug:'all',
+                items: await getCurrency('map')
             }
         ]
     }
-       
+
 }

@@ -29,7 +29,7 @@ const port = 8081;
 app.use(cors());
 
   // criação de instacia de url bas
-app.get("/latest  ", (req, res) => {
+app.get("/latest", (req, res) => {
   getData(res,'/v1/cryptocurrency/listings/latest')
 });
 
@@ -37,11 +37,7 @@ app.get('/map',(req,res)=>{
   getData(res,'/v1/cryptocurrency/map')
 })
 
-app.get('/trending' , (req , res)=>{
 
- getData(res, '/v1/cryptocurrency/trending/latest')
-
-})
 
 app.listen(port, () =>
   console.log(`Servidor iniciado rodando no port ${port}`)

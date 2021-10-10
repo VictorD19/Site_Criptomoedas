@@ -1,0 +1,42 @@
+.featured-container{
+    width: 100%;
+    height: 85vh;
+    padding-top: 140px;
+
+}
+.featured-content{
+    width: 90%;
+    margin: auto;
+    color: rgb(241, 236, 236);
+    transition: all ease 0.5s;
+}
+.feature-title{
+    font-size: 45px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.feature-description{
+    width: 48%;
+    font-size: 20px;
+}
+.feature-description > button{
+  width: 150px;
+  margin: 0;
+  border-radius: 5px;
+  border:2px solid #0c6eaf ;
+  background:  transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: all ease-in 0.3s;
+}
+.feature-description > button:hover{
+ letter-spacing: 0.5px;
+  background:  #0c6eaf;
+}
+.feature-description  a{
+text-decoration: none;
+color: inherit;
+}
